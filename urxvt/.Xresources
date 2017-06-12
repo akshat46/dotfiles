@@ -1,0 +1,97 @@
+! URxvt
+
+! General settings
+URxvt.internalBorder:    5
+URxvt.externalBorder:    5
+URxvt.saveLines: 2000
+URxvt.scrollBar: False
+URxvt.scrollstyle: rxvt
+URxvt.urgentOnBell: True
+URxvt.cursorBlink: False
+
+! :Bind C-0, C-+ and C-= to activate small, medium, and big font size resp.     
+xvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
+
+!Inconsolata
+urxvt.font: xft:Inconsolata\ for\ Powerline:size=11
+URxvt.boldFont: xft:Inconsolata-11
+URxvt.letterSpace: -1
+URxvt.lineSpace: -1
+
+! Tango theme
+
+! special
+*.foreground:   #E6E7E8
+*.background:   #2E2E2E
+*.cursorColor:  #E6E7E8
+
+! black
+*.color0:       #353535
+*.color8:       #535354
+
+! red
+*.color1:       #df6f66
+*.color9:       #df6f66
+
+! green
+*.color2:       #83b162
+*.color10:      #83b162
+
+! yellow
+*.color3:       #e3c658
+*.color11:      #e3c658
+
+! blue
+*.color4:       #79a0da
+*.color12:      #79a0da
+
+! magenta
+*.color5:       #ca7293
+*.color13:      #ca7293
+
+! cyan
+*.color6:       #967d69
+*.color14:      #967d69
+
+! white
+*.color7:       #E6E7E8
+*.color15:      #bbbbbb
+
+
+! XTerm
+
+! General settings
+XTerm*termName: xterm-256color
+XTerm*geometry: 80x24
+XTerm*saveLines: 1024
+XTerm*scrollBar: False
+XTerm*loginshell: False
+XTerm*cursorBlink: False
+
+! Fonts and Encoding
+XTerm*utf8: True
+XTerm*locale: True
+XTerm*utf8Title: True
+XTerm*renderFont: True
+XTerm*preeditType: Root
+XTerm*xftAntialias: true
+XTerm*faceName: xft:Inconsolata-12
+
+! Trim trailing spaces
+XTerm*trimSelection: true
+
+! Fix alt-key inputting
+XTerm*eightBitInput: false
+XTerm*metaSendsEscape: true
+
+! Copy and paste with clipboard
+XTerm*translations: #override \
+	Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
+	Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
+
+! Allow selecting email/url by double-click
+XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
+

@@ -1,0 +1,10 @@
+rofi.lines: 3
+rofi.eh: 2
+rofi.width: 100
+rofi.padding: 500
+
+rofi.color-enabled: true
+rofi.color-window: argb:d5535354, argb:0000000, argb:0000000
+rofi.color-normal: argb:0000000, #e6e7e8, argb:0000000, argb:0535354, #1f222b
+rofi.color-active: #1f222b, #e6e7e8, #1f222b, argb:0535354, #1f222b
+rofi.color-urgent: argb:0000000, #b76f79, argb:0000000, #b76f79, #e6e7e8
