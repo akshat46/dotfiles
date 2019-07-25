@@ -1,0 +1,4 @@
+Terminal,x-terminal-emulator,utilities-terminal
+Browser,firefox,firefox
+File manager,thunar,system-file-manager
+^sep()

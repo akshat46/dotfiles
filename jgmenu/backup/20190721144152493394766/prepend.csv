@@ -1,0 +1,24 @@
+@rect,,154,4,292,36,2,left,top,#000000 0,#656565 50,
+@search,,159,4,240,36,2,left,top,#eeeeee 80,#000000 0,
+@icon,,416,12,22,22,2,left,top,#000000 50,#000000 50,/home/akshat/.config/jgmenu/greeneye-search.svg
+@rect,,154,44,292,462,2,left,top,#000000 0,#282828 90,
+@rect,^filter(*),4,4,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,4,142,30,2,left,top,#e6e6e6 100,#000000 0,All
+@rect,^filter(#Accessories #Util #Archiving #Compression #TextEditor ),4,34,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,34,142,30,2,left,top,#e6e6e6 100,#000000 0,Accessories
+@rect,^filter(#Development #Build #Debug #IDE #Profiling #RevisionControl ),4,64,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,64,142,30,2,left,top,#e6e6e6 100,#000000 0,Development
+@rect,^filter(#Games ),4,94,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,94,142,30,2,left,top,#e6e6e6 100,#000000 0,Games
+@rect,^filter(#Graphics #Scanning #Photography ),4,124,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,124,142,30,2,left,top,#e6e6e6 100,#000000 0,Graphics
+@rect,^filter(#Internet #Network #Email #FileTransfer #WebBrowser ),4,154,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,154,142,30,2,left,top,#e6e6e6 100,#000000 0,Internet
+@rect,^filter(#Multimedia #Player #Audio #Video #Recorder ),4,184,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,184,142,30,2,left,top,#e6e6e6 100,#000000 0,Multimedia
+@rect,^filter(#Office #Calendar #Contact #Dictionary #Chart #Finance #Presentation #Spreadsheet #WordProcessor #Publishing #Viewer ),4,214,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,214,142,30,2,left,top,#e6e6e6 100,#000000 0,Office
+@rect,^filter(#Settings #Security #Preferences ),4,244,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,244,142,30,2,left,top,#e6e6e6 100,#000000 0,Settings
+@rect,^filter(#System #Emulator #FileManager #TerminalEmulator #Filesystem #Monitor ),4,274,142,30,2,left,top,#000000 0,#000000 0,
+@text,,9,274,142,30,2,left,top,#e6e6e6 100,#000000 0,System

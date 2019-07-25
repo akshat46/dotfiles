@@ -1,0 +1,37 @@
+tint2_look           = 0
+terminal_exec        = termite
+columns              = 2
+
+menu_width           = 700
+menu_height_min      = 580
+menu_height_max      = 650
+menu_padding_top     = 110
+menu_padding_right   = 70
+menu_padding_bottom  = 70
+menu_padding_left    = 70
+menu_radius          = 10
+menu_border          = 0
+menu_halign          = center
+menu_valign          = center
+
+item_margin_y        = 5
+item_height          = 50
+item_padding_x       = 8
+item_radius          = 0
+item_border          = 0
+
+sep_height           = 5
+
+font                 = AtlasGrotesk 14
+icon_size            = 30
+icon_text_spacing    = 5
+
+color_menu_bg        = #231f21 100
+color_norm_bg        = ffccccc 0
+color_norm_fg        = #d1d8e6 100
+color_sel_bg         = #8fa1b3 0
+color_sel_fg         = #5FA4CB 100
+color_sel_border     = #111111 0
+color_sep_fg         = #5FA4CB 0
+
+csv_no_dirs         = 1
