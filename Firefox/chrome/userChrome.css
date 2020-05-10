@@ -1,0 +1,71 @@
+
+:root {
+  --sidebar-min-width: 200px;
+  --sidebar-max-width: 240px;
+  --toolbar-height: 0;
+  --menubar-height: -40px;
+  --toolmenubar-height: -40px; /* sum of previous two */
+  --chrome-selection-background-color: #7310ff !important;
+}
+
+/* show bookmarks toolbar on new tab only */
+#main-window #PersonalToolbar {
+  visibility: collapse !important;
+  z-index: 1!important;
+  position: relative!important;
+  margin-left: var(--sidebar-min-width); /* shift toolbar to the right out of the way of the sidebar */
+  margin-top: var(--toolbar-height) !important;
+}
+
+#main-window[title^="Firefox Developer Edition"] #PersonalToolbar {
+  visibility: visible !important;
+  margin-top: -1px !important;
+}
+
+/* lock sidebar to height by doing the inverse margin of the toolbar element */
+#sidebar-box {
+  z-index: 1000 !important;
+  position: relative!important;
+  margin-top: var(--menubar-height) !important;
+  border-right: none !important;
+}
+
+#main-window[title^="Firefox Developer Edition"] #sidebar-box {
+  margin-top: var(--toolmenubar-height) !important;
+}
+
+/* lock sidebar to specified width */
+#sidebar-box, #sidebar-box #sidebar {
+    min-width: var(--sidebar-min-width) !important;
+    max-width: var(--sidebar-min-width) !important;
+}
+
+/* hide sidebar header for tree style tabs sidebar */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] #sidebar-header {
+  display: none;
+}
+
+/* Hide the title bar */
+#titlebar{ visibility: collapse; }
+
+/* hide normal horizontal tab bar */
+#TabsToolbar { visibility: collapse; }
+
+#sidebar { border-right: none !important; }
+
+toolbar#nav-bar {
+  padding-top: 12px;
+  padding-bottom: 7px;
+  margin-left: var(--sidebar-min-width);
+  padding-left: 7px;
+  border: none !important;
+}
+
+toolbar{
+  border: none !important;
+}
+
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
+  display: none !important;
+}

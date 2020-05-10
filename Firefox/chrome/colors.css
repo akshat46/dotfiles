@@ -1,0 +1,20 @@
+:root {
+  --bg: #2E3440;
+  --fg: #D8DEE9;
+  --blk: #3B4252;
+  --bblk: #4C566A;
+  --red: #BF616A;
+  --grn: #A3BE8C;
+  --ylw: #EBCB8B;
+  --blu: #81A1C1;
+  --mag: #B48EAD;
+  --cyn: #88C0D0;
+  --wht: #E5E9F0;
+  --bred: #BF616A;
+  --bgrn: #A3BE8C;
+  --bylw: #EBCB8B;
+  --bblu: #81A1C1;
+  --bmag: #EBCB8B;
+  --bcyn: #8FBCBB;
+  --bwht: #ECEFF4;
+}
