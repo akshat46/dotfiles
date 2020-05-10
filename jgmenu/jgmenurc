@@ -9,8 +9,8 @@ menu_padding_top     = 110
 menu_padding_right   = 70
 menu_padding_bottom  = 70
 menu_padding_left    = 70
-menu_radius          = 10
-menu_border          = 0
+menu_radius          = 5
+menu_border          = 3
 menu_halign          = center
 menu_valign          = center
 
@@ -22,15 +22,16 @@ item_border          = 0
 
 sep_height           = 5
 
-font                 = AtlasGrotesk 14
+font                 = Atlas Grotesk 14
 icon_size            = 30
 icon_text_spacing    = 5
 
-color_menu_bg        = #231f21 100
+color_menu_bg        = #01011d 100
+color_menu_border    = #7310ff
 color_norm_bg        = ffccccc 0
-color_norm_fg        = #d1d8e6 100
-color_sel_bg         = #8fa1b3 0
-color_sel_fg         = #5FA4CB 100
+color_norm_fg        = #d0b8f2 100
+color_sel_bg         = #75889f 0
+color_sel_fg         = #7310ff 100
 color_sel_border     = #111111 0
 color_sep_fg         = #5FA4CB 0
 
