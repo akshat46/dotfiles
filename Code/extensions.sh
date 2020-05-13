@@ -1,3 +1,5 @@
+# code --list-extensions | xargs -L 1 echo code --install-extension
+
 code --install-extension alefragnani.project-manager
 code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension dakshmiglani.hex-to-rgba

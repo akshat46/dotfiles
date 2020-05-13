@@ -112,7 +112,7 @@ alias findp="apt-cache search"
 alias sop='size_of_package'
 alias less='less -m -N -g -i -J --underline-special --SILENT'
 alias more='less'
-alias cat="highlight -l -O ansi --force"
+alias cat="highlight -O ansi --force"
 alias uncat="highlight -O ansi --force"
 alias ls="exa -a -G --group-directories-first"
 alias svim="sudo vim"
@@ -124,7 +124,6 @@ alias ..="cd .."
 alias copy="xsel -ib"
 alias copycat='copy_cat'
 alias d="kitty +kitten diff"
-alias def="dict_define"
 alias pdf="open_zathura"
 
 # Use lf to switch directories and bind it to ctrl-o
@@ -143,18 +142,6 @@ lfcd () {
 }
 
 bindkey -s '^o' 'lfcd\n'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/.local/android-studio/bin:$HOME/.gem/bin/:$PATH"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/akshat/.local/google-cloud-sdk/path.zsh.inc' ]; then . '/home/akshat/.local/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/akshat/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/akshat/.local/google-cloud-sdk/completion.zsh.inc'; fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
