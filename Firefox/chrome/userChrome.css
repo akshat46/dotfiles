@@ -1,7 +1,17 @@
+@import "global/variables.css";
+@import "global/global.css";
+@import "icons/icons.css";
+@import "tabbar/tabbar.css";
+@import "navbar/navbar.css";
+@import "personalbar/personalbar.css";
+@import "popup/popup.css";
+@import "urlbar/urlbar.css";
+@import "findbar/findbar.css";
 
 :root {
-  --sidebar-min-width: 200px;
-  --sidebar-max-width: 240px;
+  --adjust-ui-to-sidebar: 50px; 
+  --sidebar-min-width: 250px;
+  --sidebar-max-width: 300px;
   --toolbar-height: 0;
   --menubar-height: -40px;
   --toolmenubar-height: -40px; /* sum of previous two */
@@ -13,7 +23,7 @@
   visibility: collapse !important;
   z-index: 1!important;
   position: relative!important;
-  margin-left: var(--sidebar-min-width); /* shift toolbar to the right out of the way of the sidebar */
+  margin-left: var(--adjust-ui-to-sidebar); /* shift toolbar to the right out of the way of the sidebar */
   margin-top: var(--toolbar-height) !important;
 }
 
@@ -27,17 +37,29 @@
   z-index: 1000 !important;
   position: relative!important;
   margin-top: var(--menubar-height) !important;
-  border-right: none !important;
+  padding-top: calc(-1*var(--menubar-height));
+  border-radius: 0 5px 0px 0;
+  min-width: var(--adjust-ui-to-sidebar) !important;
+  max-width: var(--adjust-ui-to-sidebar) !important;
+}
+
+/* inner and outer normal width */
+#sidebar-box #sidebar {
+    min-width: var(--sidebar-min-width) !important;
+    max-width: var(--sidebar-min-width) !important;
+    transform: translateX(calc(var(--adjust-ui-to-sidebar) - var(--sidebar-min-width))) !important;
+    border-radius: 0 3px 0px 0;
+    transition: all 0.2s ease-in-out;
+}
+
+/* inner and outer normal min/max width when hovered */
+#sidebar-box #sidebar:hover {
+    transform: translateX(0) !important;
+    box-shadow: 2px 0 33px #28282F;
 }
 
 #main-window[title^="Firefox Developer Edition"] #sidebar-box {
   margin-top: var(--toolmenubar-height) !important;
-}
-
-/* lock sidebar to specified width */
-#sidebar-box, #sidebar-box #sidebar {
-    min-width: var(--sidebar-min-width) !important;
-    max-width: var(--sidebar-min-width) !important;
 }
 
 /* hide sidebar header for tree style tabs sidebar */
@@ -56,7 +78,7 @@
 toolbar#nav-bar {
   padding-top: 12px;
   padding-bottom: 7px;
-  margin-left: var(--sidebar-min-width);
+  margin-left: var(--adjust-ui-to-sidebar);
   padding-left: 7px;
   border: none !important;
 }
@@ -69,3 +91,4 @@ toolbar{
 #sidebar-box[sidebarcommand="treestyletab_piro_sakura_ne_jp-sidebar-action"] + #sidebar-splitter {
   display: none !important;
 }
+
