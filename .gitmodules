@@ -4,3 +4,7 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/akshat46/nvim.git
+[submodule "FlyingFox"]
+	path = FlyingFox
+	url = https://github.com/akshat46/FlyingFox.git
+	branch = local_configs
