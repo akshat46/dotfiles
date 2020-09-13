@@ -1,3 +1,6 @@
 [submodule "awesome"]
 	path = awesome
 	url = https://github.com/akshat46/perpetual-zen.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/akshat46/nvim.git
